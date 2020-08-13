@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-import datetime
+from datetime import datetime 
 
 class conectionMongo(object):
     __client = MongoClient('mongodb://localhost:27017/')
@@ -13,7 +13,7 @@ class conectionMongo(object):
             "flow": flow,
             "volume": volume,
             "alarm": alarm,
-            "insertAt": datetime.datetime.now()
+            "insertAt": datetime.now()
         }
         try:
             self.__collection.insert(dado)
@@ -36,6 +36,8 @@ class conectionMongo(object):
             res = self.__collection.find_one({}, sort=[('_id', -1)])["_id"]
         except:
             return False
+        if(res == None or res == False):
+            res = 0
         return res
 
     def dropElement(self, ultimateId):

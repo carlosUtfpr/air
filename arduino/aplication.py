@@ -22,12 +22,12 @@ while True:
             js = VALUE_SERIAL.rstrip('\n')
             js = js.rstrip('\r')
             data = json.loads(js)
-            if(data["angulo"] > 100):
-                volume =  ((data["angulo"]*-0.392)+1417)
+            #if(data["angulo"] > 100):
+            volume =  ((data["angulo"]*-0.392)+1417)
             if(volume < 0):
                 volume = 0
             fluxo = volume - volumeant
-            db.insertTo(count,str("{0:.1f}".format(round(data["pressao"], 1))),str("{0:.1f}".format(round(fluxo, 1))),str("{0:.1f}".format(round(volume,1))), str(data["alarm"]))
+            db.insertTo(count, str("{0:.1f}".format(round(data["pressao"], 1))), str("{0:.1f}".format(round(fluxo, 1))), str("{0:.1f}".format(round(volume,1))), str(data["alarm"]))
             volumeant = volume
     except:
         db.insertTo(count,str("null"),str("null"),str("null"), str(8))
