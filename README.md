@@ -44,8 +44,11 @@ Na pasta /home/pi/.config/lxsession/LXDE-pi/(se não existir, deve criar) e aces
 certificar-se de que essas linhas abaixo estejam no arquivo:
 <br />
 @lxpanel --profile LXDE-pi
+  <br />
 @pcmanfm --desktop --profile LXDE-pi
+  <br />
 @xscreensaver -no-splash
+  <br />
 @point-rpi ;
 <br />
 Acrescentar na ultima linha:
