@@ -51,8 +51,10 @@ certificar-se de que essas linhas abaixo estejam no arquivo:
   <br />
 @xscreensaver -no-splash
   <br />
-@point-rpi ;
+@point-rpi
+  <br />
 @unclutter -idle 0
+  <br />
 sleep 5
 <br />
 Acrescentar na ultima linha:
