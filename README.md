@@ -1,5 +1,8 @@
 # air
 
+Instalar o mongodb (https://pimylifeup.com/mongodb-raspberry-pi/)
+=====================================
+
 clonar repositório.
 ====================================
 
