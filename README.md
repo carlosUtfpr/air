@@ -1,6 +1,8 @@
 # air
 
 Instalar o mongodb (https://pimylifeup.com/mongodb-raspberry-pi/)
+Atualizar o node e npm (https://github.com/nodesource/distributions)
+
 ------------------------------------
 
 clonar repositório.
