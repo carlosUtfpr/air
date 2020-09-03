@@ -58,3 +58,31 @@ footer.sticky-footer{
   height: 17.4rem;
   box-shadow: 0px 0px 15px 0px #e3e6f0;
 }
+
+@media screen and (max-height: 769px) {
+  .sidebar .sidebar-brand {
+    height: 7rem;
+    .logoUTFPR{
+      bottom: -20.4rem;
+    }
+  }
+
+  .card-body{
+    padding: 0.5rem;
+    .chart-area {
+      height: 10rem;
+    }
+  }
+  #currentFlow, #currentPressure, #currentVolume{
+    padding: 0;
+    margin-top: 0;
+  }
+  .cardTime {
+    width: 18rem;
+    height: 13.4rem;
+  }
+
+  footer.sticky-footer {
+    padding: 0rem 0;
+  }
+}
