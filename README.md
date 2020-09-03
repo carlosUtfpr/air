@@ -62,6 +62,7 @@ acessar o arquivo /etc/lightdm/lightdm.conf
 e adicionar as linhas no final:
 <br />
 [SeatDefaults]
+  <br />
 xserver-command=X -s 0 -dpms
 </p>
 
