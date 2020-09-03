@@ -52,6 +52,8 @@ certificar-se de que essas linhas abaixo estejam no arquivo:
 @xscreensaver -no-splash
   <br />
 @point-rpi ;
+@unclutter -idle 0
+sleep 5
 <br />
 Acrescentar na ultima linha:
 lxterminal -e bash /home/pi/Desktop/air/init.sh
