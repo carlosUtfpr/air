@@ -30,7 +30,6 @@ while True:
             db.insertTo(count, str("{0:.1f}".format(round(data["pressao"], 1))), str("{0:.1f}".format(round(fluxo, 1))), str("{0:.1f}".format(round(volume,1))), str(data["alarm"]))
             volumeant = volume
     except:
-        db.insertTo(count,str("null"),str("null"),str("null"), str(8))
         pass
 
 comport.close()
