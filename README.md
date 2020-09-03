@@ -4,7 +4,7 @@ Instalar o mongodb (https://pimylifeup.com/mongodb-raspberry-pi/)
 <br/>
 Atualizar o node e npm (https://github.com/nodesource/distributions)
 <br />
-De o comando <span>sudo apt-get install unclutter</span>
+De o comando <b>sudo apt-get install unclutter</b>
 
 ------------------------------------
 
