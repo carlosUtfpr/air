@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /home/pi/Desktop/air/dashboard/
-chromium-browser --incognito --kiosk index.html &
+midori -e fullscreen --private index.html &
 
 cd ../arduino
 python aplication.py &
