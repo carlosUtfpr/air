@@ -5,6 +5,8 @@ Instalar o mongodb (https://pimylifeup.com/mongodb-raspberry-pi/)
 Atualizar o node e npm (https://github.com/nodesource/distributions)
 <br />
 De o comando <b>sudo apt-get install unclutter</b>
+<br />
+De o comando <b>sudo apt-get install midori</b>
 
 ------------------------------------
 
