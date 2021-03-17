@@ -23,9 +23,7 @@ while True:
             js = js.rstrip('\r')
             data = json.loads(js)
             #if(data["angulo"] > 100):
-            volume =  ((data["angulo"]*-0.392)+1417)
-            if(volume < 0):
-                volume = 0
+            volume =  data["angulo"]
             fluxo = volume - volumeant
             db.insertTo(count, str("{0:.1f}".format(round(data["pressao"], 1))), str("{0:.1f}".format(round(fluxo, 1))), str("{0:.1f}".format(round(volume,1))), str(data["alarm"]))
             volumeant = volume
